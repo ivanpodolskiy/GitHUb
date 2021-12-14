@@ -27,8 +27,12 @@ class ViewController: UIViewController {
 
     
     override func viewDidLoad() {
+       
+//
         super.viewDidLoad()
-        dispatchGroup()
+//        dispatchGroup()
+        mainThread()
+     
         // Do any additional setup after loading the view.
     }
     
@@ -53,6 +57,7 @@ class ViewController: UIViewController {
         self.textDoc.lineBreakMode = .byWordWrapping
         self.textDoc.numberOfLines = 0
         self.textDoc.text = self.documents.description
+       
  
 }
     
